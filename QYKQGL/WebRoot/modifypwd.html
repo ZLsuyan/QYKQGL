@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>修改密码</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.STYLE4 {font-size: 14px}
+-->
+</style>
+<script language="javascript">
+function checkform(){
+	var f=document.modifypwdform;
+	if(f.oldpwd.value==""){
+		alert("请输入原密码!");
+		f.oldpwd.focus();
+		return false;
+	}else if(f.newpwd.value==""){
+		alert("请输入新密码!");
+		f.newpwd.focus();
+		return false;
+	}else if(f.confirm.value==""){
+		alert("请输入确认密码!");
+		f.confirm.focus();
+		return false;
+	}else if(f.newpwd.value!=f.confirm.value){
+		alert("两输入密码不一致，请重新输入!");
+		f.confirm.focus();
+		return false;
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="modifypwdform" action="modifypwd.jsp" method="post" onsubmit="javascript:return checkform();">
+<table height="200" width="600"  border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#9EC3F2">
+  <!--DWLayoutTable-->
+  <tr>
+    <td height="40" colspan="2" align="center" valign="middle" background="img/bg_titlebarr.gif"><span class="STYLE1">&nbsp;<font size="5" face="楷体" color="#6495ED">修改密码</font></span></td>
+  </tr>
+  <tr>
+    <td width="155" height="40" align="right" valign="middle" bgcolor="#F9FCFF" class="STYLE4"><font size="5" face="楷体" color="#9932CC">原密码:</font></td>
+    <td width="280" align="left" valign="middle" bgcolor="#F9FCFF"><input name="oldpwd" type="password" id="oldpwd" value="" /></td>
+  </tr>
+  <tr>
+    <td height="40" align="right" valign="middle" bgcolor="#F9FCFF" class="STYLE4"><font size="5" face="楷体" color="#9932CC">新密码:</font></td>
+    <td align="left" valign="middle" bgcolor="#F9FCFF"><input name="newpwd" type="password" id="newpwd" /></td>
+  </tr>
+  <tr>
+    <td height="40" align="right" valign="middle" bgcolor="#F9FCFF" class="STYLE4"><font size="5" face="楷体" color="#9932CC">确认密码:</font></td>
+    <td align="left" valign="middle" bgcolor="#F9FCFF"><input name="confirm" type="password" id="confirm" /></td>
+  </tr>
+  <tr>
+    <td height="40" colspan="2" align="center" valign="middle" background="img/bg_titlebarr.gif">&nbsp;
+    <input type="submit" name="submit" value="确定"/>&nbsp;
+    <input type="reset" name="reset" value="重置" />&nbsp;
+    <input type="button" value="返回" onclick="javascript:history.back();">
+    
+    </td>
+  </tr>
+</table>
+
+<input type="hidden" name="op" value="modifypwd"/>
+</form>
+</body>
+</html>

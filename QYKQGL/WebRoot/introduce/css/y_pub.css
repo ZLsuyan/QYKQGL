@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{ text-decoration:none; color:#333333;}
+body,div,q,iframe,form,
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{ margin: 0; padding: 0;}
+img,fieldset{border: none 0;}
+body,td,textarea{word-break: break-all; line-height:1.5;}
+body,input,textarea,select,button{margin: 0; font-size: 12px; font-family: 微软雅黑,宋体, SimSun, sans-serif;}
+div,p,table,th,td{ font-size:1em; font-family:微软雅黑,inherit; line-height:inherit;}
+td{word-wrap:break-word; word-break:break-all;}
+ul,dl,li{list-style: none outside;}
+em,i,u,q,s,dl,caption{ font-style: normal; font-weight: normal; text-decoration: none; }
+p{text-align: justify; text-justify: inter-ideograph; margin-top:0em; margin-bottom:1em;}
+textarea {line-height:1.4;}
+.clear{clear:both;}
+* html textarea,*+html textarea {overflow:auto; overflow-x: hidden; }/*使多行文本框不显示默认的竖向滚动条*/
+* html iframe, * html frame {overflow:auto; }/*使浮动窗口不显示默认的竖向滚动条*/
+* html input {overflow: hidden; }/*使按钮文字不溢出*/
+table{border-collapse:collapse;}
+.fl{float:left;}
+.fr{float:right;}
+/************导航开始********************/
+.nav{background:url(../images/nav-bg.jpg) no-repeat left bottom #ba292e;width:100%;background-size:cover;height:69px;margin:0px auto;min-width:1035px;}
+.nav01{width:1020px;margin:0px auto;position:relative;z-index:10000;}
+.nav01 .logo{margin-left:2px;}
+.nav01 ul{padding-left:75px;float:left;margin-top:24px;}
+.nav01 ul li{float:left;line-height:45px;margin:0px 14px;width:61px;height:45px;display:inline;}
+.nav01 ul li a{color:#fff;font-weight:bold;font-size:14px;display:block;}
+.nav01 ul li a.hover,.nav01 ul li a:hover{background:url(../images/a-hover.jpg) no-repeat center bottom;color:#eceeb3;}
+.nav01 ul li .m_nav{display:none;}
+.nav01 ul li.hovers .m_nav{display:block;}
+.nav01 .m_nav{background:url(../images/m-nav.png) no-repeat;width:224px;height:26px;position:absolute;top:55px;right:12px;padding-left:15px;z-index:999;padding-top:2px;line-height:23px;}
+.nav01 .m_nav a{color:#6b6b6e;font-weight:bold;display:inline;margin:0px 7px;line-height:28px;float:left;}
+.nav01 .m_nav a:hover{background:none;color:#6b6b6e;}
+/************导航END********************/
+
+/***************尾部开始********************/
+
+
+
+.f_link{text-align:center;line-height:25px;font-weight:bold;color:#1e1e1e;font-size:14px;margin:20px 0px 10px 0px;}
+.f_link a{font-weight:bold;color:#1e1e1e;margin:0px 10px;}
+
+
+.copyright{text-align:center;line-height:23px;color:#1e1e1e;}
+
+
+.y_kf{background-color:#e5abad;height:57px;position:fixed;left:0px;bottom:0px;width:100%;margin-top:100px;}
+.y_kf01{width:1024px;margin:0px auto;}
+.y_kf01 .qq{background:url(../images/qq-bg.jpg) no-repeat;width:348px;height:32px;margin-top:15px;margin-left:10px;padding-left:10px;}
+.y_kf01 .qq li{float:left;}
+.y_kf01 .qq li a{background:url(../images/qq.jpg) no-repeat left center;padding-left:25px;display:inline-block;line-height:32px;margin:0px 16px;color:#fff;font-weight:bold;}
+.y_kf01 .tel{background:url(../images/tel-bg.jpg) no-repeat;width:175px;height:32px;float:left;margin-top:15px;margin-left:15px;line-height:32px;text-align:right;font-weight:bold;color:#fff;font-size:17px;padding-right:20px;}
+.y_kf01 .weibo{padding-top:15px;}
+.y_kf01 .weibo li{float:left;margin:0px 5px;}
+.y_kf01 .weibo ul{position:relative;}
+.y_kf01 .weibo .y_ewm{position:absolute;right:55px;bottom:0px;}
+.y_kf01 .weibo .y_ewm img{width:92px;height:92px;}
+
+.list_menu{padding-top:10px;width:700px;margin:0px auto;}
+.list_menu a{margin:0px 15px;}
+.list_menu a img{width:200px;height:56px;}
+
+
+
+/*********************子页轮换banner****************************/
+
+
+#Slidebox{width:100%; height:388px;  padding:0px;  margin:0 auto;  /*position:relative;*/ background:#1f2022; overflow:hidden;position: relative;z-index: 0;min-width:1035px;}
+#flashBg {height: 388px;overflow: hidden;width:100%;clear: both;margin: 0;padding: 0;}
+#flash{width: 1000px;height: 388px;overflow: hidden;margin: 0 auto;clear: both;position: relative;padding: 0px 0px;}
+#flash a {width: 1000px;height: 388px;display: none;}
+#flash img {width: 1000px;height: 388px;}
+.flash_bar {width:555px;padding-left: 460px;z-index: 69;height: 30px;overflow: hidden;position: absolute;padding-top: 13px!important;padding-top: 12px;
+bottom:0px;left:0px;text-align: center;}
+.flash_bar .dq {display:block;float:left;width:22px;height:22px;margin:2px 4px;cursor:pointer;background:url(../images/banner-hover.png) no-repeat;overflow:hidden;}
+.flash_bar .no{display:block;float:left;width:22px;height:22px;margin:2px 4px;cursor:pointer;background:url(../images/banner-abg.png) no-repeat;overflow:hidden;}

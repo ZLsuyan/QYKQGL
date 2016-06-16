@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="QYKQGL"
+  id="myeclipse.1429714586039"
+  context-root="/QYKQGL"
+  j2ee-spec="5.0"
+  archive="QYKQGL.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
